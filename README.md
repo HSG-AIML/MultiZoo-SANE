@@ -1,6 +1,6 @@
 # The Impact of Model Zoo Size and Composition on Weight Space Learning
 
-This repository contains the code for the workshop paper "The Impact of Model Zoo Size and Composition on Weight Space Learning" for the ICRL 2025 Workshop on Neural Network Weights as a New Data Modality. This work introduces an adapdation of the Sequential Autoencoder for Neural Embeddings ([SANE](https://github.com/HSG-AIML/SANE)) to allow training on inhomogenous model zoos. The paper can be found here: [arxiv](https://arxiv.org/abs/2504.10141)
+This repository contains the code for the workshop paper "The Impact of Model Zoo Size and Composition on Weight Space Learning" for the ICLR 2025 Workshop on Neural Network Weights as a New Data Modality. This work introduces an adapdation of the Sequential Autoencoder for Neural Embeddings ([SANE](https://github.com/HSG-AIML/SANE)) to allow training on inhomogenous model zoos. The paper can be found here: [arxiv](https://arxiv.org/abs/2504.10141)
 
 ## Summary 
 
