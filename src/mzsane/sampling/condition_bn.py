@@ -88,7 +88,7 @@ def condition_checkpoints(checkpoints, config, iterations=10, reference_dataset_
 def load_datasets_from_config(config):
     if config.get("dataset::dump", None) is not None:
         print(f"loading data from {config['dataset::dump']}")
-        dataset = torch.load(config["dataset::dump"])
+        dataset = torch.load(config["dataset::dump"], weights_only=False)
         trainset = dataset["trainset"]
         testset = dataset["testset"]
         valset = dataset.get("valset", None)

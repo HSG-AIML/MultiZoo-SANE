@@ -62,7 +62,7 @@ def get_anchor_embeddings(
         anchor_ds = ray.get(anchor_ds_ref)
     else:
         logging.info(f"get anchor embeddings from {anchor_ds_path}")
-        anchor_ds = torch.load(anchor_ds_path)
+        anchor_ds = torch.load(anchor_ds_path, weights_only=False)
     anchor_weights, anchor_masks = anchor_ds.__get_weights__()
 
     assert not torch.isnan(anchor_weights).any(), "anchor weights contain NaNs"
