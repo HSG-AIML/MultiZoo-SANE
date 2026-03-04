@@ -58,7 +58,6 @@ class AEModule(nn.Module):
             contrast=config.get("training::contrast", "simclr"),
             z_var_penalty=config.get("training::z_var_penalty", 0.0),
             standardize_token=config.get("training::standardize_token", False),
-            standardize_window=config.get("training::standardize_window", False),
             standardize_std_eps=config.get("training::standardize_std_eps", 1e-4),
         )
 
@@ -276,7 +275,6 @@ class AEModule(nn.Module):
                 final_div_factor=10000.0,
                 three_phase=False,
                 last_epoch=-1,
-                verbose=False,
             )
 
     def save_model(self, experiment_dir):

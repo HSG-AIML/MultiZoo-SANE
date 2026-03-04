@@ -9,7 +9,7 @@ from pathlib import Path
 from mzsane.datasets.def_FastTensorDataLoader import FastTensorDataLoader
 
 from mzsane.models.def_net import NNmodule
-from mzsane.models.def_net_width import NNmodule_width
+
 import os
 import torchvision.datasets as datasets
 import torchvision.transforms as transforms
